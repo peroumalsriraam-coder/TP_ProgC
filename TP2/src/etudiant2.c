@@ -5,8 +5,8 @@ struct Etudiant {
     char nom[30];
     char prenom[30];
     char adresse[100];
-    float note1;  // Programmation en C
-    float note2;  // Système d'exploitation
+    float note1;
+    float note2;
 };
 
 int main() {
@@ -52,6 +52,13 @@ int main() {
         printf("\nÉtudiant.e %d :\n", i + 1);
         printf("Nom     : %s\n", etudiants[i].nom);
         printf("Prénom  : %s\n", etudiants[i].prenom);
-        printf("Adresse");
+        printf("Adresse : %s\n", etudiants[i].adresse);
+        printf("Note 1  : %.2f\n", etudiants[i].note1);
+        printf("Note 2  : %.2f\n", etudiants[i].note2);
+    }
+
+    return 0;
+}
+
 
 
