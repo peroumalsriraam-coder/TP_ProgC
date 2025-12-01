@@ -52,5 +52,6 @@ int main() {
         printf("\nÉtudiant.e %d :\n", i + 1);
         printf("Nom     : %s\n", etudiants[i].nom);
         printf("Prénom  : %s\n", etudiants[i].prenom);
-        printf("Adresse")
+        printf("Adresse");
+
 
