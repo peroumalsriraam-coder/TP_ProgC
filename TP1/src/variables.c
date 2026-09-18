@@ -1,66 +1,51 @@
 #include <stdio.h>
 
-int main() {
+int main(void)
+{
+    /* char */
+    signed char   sc  = -100;
+    unsigned char uc  = 200;
 
-    // --- char ---
-    char c = 'A';
-    signed char sc = -10;
-    unsigned char uc = 200;
+    /* short */
+    signed short   ss = -30000;
+    unsigned short us = 60000;
 
-    // --- short ---
-    short s = 123;
-    signed short ss = -123;
-    unsigned short us = 456;
+    /* int */
+    signed int   si = -123456;
+    unsigned int ui = 123456;
 
-    // --- int ---
-    int i = 1000;
-    signed int si = -1000;
-    unsigned int ui = 2000;
+    /* long int */
+    signed long int   sli = -1234567890L;
+    unsigned long int uli = 1234567890UL;
 
-    // --- long int ---
-    long int li = 123456L;
-    signed long int sli = -123456L;
-    unsigned long int uli = 123456UL;
+    /* long long int */
+    signed long long int   slli = -123456789012345LL;
+    unsigned long long int ulli = 123456789012345ULL;
 
-    // --- long long int ---
-    long long int lli = 123456789LL;
-    signed long long int slli = -123456789LL;
-    unsigned long long int ulli = 123456789ULL;
+    /* float, double, long double : pas de version signed/unsigned */
+    float       f  = 3.14159f;
+    double      d  = 3.14159265358979;
+    long double ld = 3.14159265358979323846L;
 
-    // --- float ---
-    float f = 3.14f;
+    /* Affichage des valeurs */
+    printf("signed char             : %d\n", sc);
+    printf("unsigned char           : %u\n", uc);
 
-    // --- double ---
-    double d = 3.14159;
+    printf("signed short            : %hd\n", ss);
+    printf("unsigned short          : %hu\n", us);
 
-    // --- long double ---
-    long double ld = 3.141592653589L;
+    printf("signed int              : %d\n", si);
+    printf("unsigned int            : %u\n", ui);
 
+    printf("signed long int         : %ld\n", sli);
+    printf("unsigned long int       : %lu\n", uli);
 
-    // --- AFFICHAGE ---
-    printf("char = %c\n", c);
-    printf("signed char = %d\n", sc);
-    printf("unsigned char = %u\n", uc);
+    printf("signed long long int    : %lld\n", slli);
+    printf("unsigned long long int  : %llu\n", ulli);
 
-    printf("short = %d\n", s);
-    printf("signed short = %d\n", ss);
-    printf("unsigned short = %u\n", us);
-
-    printf("int = %d\n", i);
-    printf("signed int = %d\n", si);
-    printf("unsigned int = %u\n", ui);
-
-    printf("long int = %ld\n", li);
-    printf("signed long int = %ld\n", sli);
-    printf("unsigned long int = %lu\n", uli);
-
-    printf("long long int = %lld\n", lli);
-    printf("signed long long int = %lld\n", slli);
-    printf("unsigned long long int = %llu\n", ulli);
-
-    printf("float = %f\n", f);
-    printf("double = %lf\n", d);
-    printf("long double = %Lf\n", ld);
+    printf("float                   : %f\n", f);
+    printf("double                  : %lf\n", d);
+    printf("long double             : %Lf\n", ld);
 
     return 0;
 }
